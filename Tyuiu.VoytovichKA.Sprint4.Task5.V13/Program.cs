@@ -35,7 +35,7 @@ namespace Tyuiu.VoytovichKA.Sprint4.Task5.V13
             {
                 for (int j = 0; j <= col - 1; j++)
                 {
-                    arr[i,j] = rnd.Next(-2, 5);
+                    arr[i, j] = rnd.Next(-2, 5);
                 }
             }
             Console.WriteLine();
