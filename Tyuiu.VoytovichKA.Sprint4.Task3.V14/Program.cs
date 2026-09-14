@@ -12,7 +12,7 @@ namespace Tyuiu.VoytovichKA.Sprint4.Task3.V14
             Console.Title = "Спринт #4 | Выполнил: Войтович К.А. | НТм-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
-            Console.WriteLine("* Тема: Одномерные массивы (генератор случайных чисел)                    *");
+            Console.WriteLine("* Тема: Многомерные массивы (статический ввод)                            *");
             Console.WriteLine("* Задание #3                                                              *");
             Console.WriteLine("* Вариант #14                                                             *");
             Console.WriteLine("* Выполнил: Войтович Климентий Антонович | НТм-25-1                       *");

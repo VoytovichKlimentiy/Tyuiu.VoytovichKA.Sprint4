@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Numerics;
-using Tyuiu.VoytovichKA.Sprint4.Task4.V29.Lib;
+using Tyuiu.VoytovichKA.Sprint4.Task5.V13.Lib;
 
-namespace Tyuiu.VoytovichKA.Sprint4.Task4.V29
+namespace Tyuiu.VoytovichKA.Sprint4.Task5.V13
 {
     class Program
     {
@@ -12,30 +12,30 @@ namespace Tyuiu.VoytovichKA.Sprint4.Task4.V29
             Console.Title = "Спринт #4 | Выполнил: Войтович К.А. | НТм-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
-            Console.WriteLine("* Тема: Многомерные массивы (ввод с клавиатуры)                           *");
-            Console.WriteLine("* Задание #4                                                              *");
-            Console.WriteLine("* Вариант #29                                                             *");
+            Console.WriteLine("* Тема: Многомерные массивы (генератор случайных чисел)                   *");
+            Console.WriteLine("* Задание #5                                                              *");
+            Console.WriteLine("* Вариант #13                                                             *");
             Console.WriteLine("* Выполнил: Войтович Климентий Антонович | НТм-25-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
             Console.WriteLine("* Дан двумерный целочисленный массив 5 на 5 элементов, заполненный        *");
-            Console.WriteLine("* значениями с клавиатуры в диапазоне от 4 до 8. Найти максимальный       *");
-            Console.WriteLine("* элемент в четвёртой строке массива.                                     *");
+            Console.WriteLine("* случайными значениями в диапазоне от 4 до 8. Заменить отрицательные     *");
+            Console.WriteLine("* элементы на 0.                                                          *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.Write("* Введите количество строк в массиве: ");
-            int row =Convert.ToInt32(Console.ReadLine());
+            int row = Convert.ToInt32(Console.ReadLine());
             Console.Write("* Введите количество столбцов в массиве: ");
             int col = Convert.ToInt32(Console.ReadLine());
 
-            int[,] arr = new int [col,row];
+            int[,] arr = new int[col, row];
 
-            for (int i = 0; i <= row-1; i++)
+            Random rnd = new Random();
+            for (int i = 0; i <= row - 1; i++)
             {
                 for (int j = 0; j <= col - 1; j++)
                 {
-                    Console.Write("Введите значение элемента массива [" + i + "," + j + "]:");
-                    arr[i, j] = Convert.ToInt32(Console.ReadLine());
+                    arr[i,j] = rnd.Next(-2, 5);
                 }
             }
             Console.WriteLine();
@@ -51,7 +51,15 @@ namespace Tyuiu.VoytovichKA.Sprint4.Task4.V29
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(ds.Calculate(arr));
+            int[,] res = ds.Calculate(arr);
+            for (int i = 0; i < res.GetLength(0); i++)
+            {
+                for (int j = 0; j < res.GetLength(1); j++)
+                {
+                    Console.Write(res[i, j] + ",\t");
+                }
+                Console.WriteLine();
+            }
             Console.ReadLine();
         }
     }
