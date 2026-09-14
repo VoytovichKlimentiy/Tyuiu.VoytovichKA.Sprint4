@@ -10,7 +10,7 @@ namespace Tyuiu.VoytovichKA.Sprint4.Task0.V24
             Console.Title = "Спринт #4 | Выполнил: Войтович К.А. | НТм-25-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #4                                                               *");
-            Console.WriteLine("* Тема: Использование операторов continue и break в циклах                *");
+            Console.WriteLine("* Тема: Одномерные массивы (статический ввод)                             *");
             Console.WriteLine("* Задание #0                                                              *");
             Console.WriteLine("* Вариант #24                                                             *");
             Console.WriteLine("* Выполнил: Войтович Климентий Антонович | НТм-25-1                       *");

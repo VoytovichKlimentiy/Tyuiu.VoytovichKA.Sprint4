@@ -4,4 +4,9 @@
     <Project Path="Tyuiu.VoytovichKA.Sprint4.Task0.V24.Test/Tyuiu.VoytovichKA.Sprint4.Task0.V24.Test.csproj" />
     <Project Path="Tyuiu.VoytovichKA.Sprint4.Task0.V24/Tyuiu.VoytovichKA.Sprint4.Task0.V24.csproj" />
   </Folder>
+  <Folder Name="/Task1/">
+    <Project Path="Tyuiu.VoytovichKA.Sprint4.Task1.V29.Lib/Tyuiu.VoytovichKA.Sprint4.Task1.V29.Lib.csproj" Id="fdb92f36-bdc9-429a-91ce-a6a4cc5b114d" />
+    <Project Path="Tyuiu.VoytovichKA.Sprint4.Task1.V29.Test/Tyuiu.VoytovichKA.Sprint4.Task1.V29.Test.csproj" Id="c6964fe9-665c-4b9d-ad75-3c729660ce25" />
+    <Project Path="Tyuiu.VoytovichKA.Sprint4.Task1.V29/Tyuiu.VoytovichKA.Sprint4.Task1.V29.csproj" Id="23726e5c-2222-422a-bdbb-5c37926dbc23" />
+  </Folder>
 </Solution>
