@@ -12,11 +12,12 @@ namespace Tyuiu.VoytovichKA.Sprint4.Task7.V26.Lib
             {
                 for (int j = 0; j < m; j++)
                 {
-                    matrix[i, j] = int.Parse(value[i * j + j].ToString());
+                    matrix[i, j] = int.Parse(value.Substring(i*m+j, 1));
                     if (matrix[i, j] % 2 == 0)
                     {
-                        res*=matrix[i, j];
+                        res *= matrix[i, j];
                     }
+
                 }
             }
             return res;
